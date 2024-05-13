@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+/* font style  */
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.montserrat-extra-bold {
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* font style end */
+
+/* Navbar Style */
+.container-row-1 {
+  width: 25%;
+}
+
+.container-row-2 {
+  width: 75%;
+}
+
+.nav-link {
+  color: black !important;
+  font-size : 18px;
+}
+
+.nav-link:hover {
+  color: #32CD32 !important;
+}
+
+.navbar-brand {
+    color: #32CD32;
+}
+
+.nav-item {
+  margin-left : 30px;
+  
+}
+
+/* Navbar Style end */

@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* font style  */
 
 .montserrat {
@@ -26,8 +25,22 @@
   font-style: normal;
 }
 
+.poppins-regular {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+}
+
+.ibm-plex-serif-bold {
+      font-family: "IBM Plex Serif", serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+    
+
 /* font style end */
  
+/* Navbar Style */
 .nav-link {
  color: black !important;
  font-size : 18px;
@@ -56,3 +69,48 @@
 .container-row-2 {
  width: 75%s;
 }
+
+li {
+      padding-left: 5px;
+  }
+
+/* Navbar Style end*/
+
+/* content 1 */
+.container-content-1 {
+      padding: 50px;
+  }
+
+.container-header-news {
+      padding: 40px;
+  }
+
+.h1-content-1 {
+      font-size: 32px;
+  }
+
+.p-content-1 {
+      font-size: 18px;
+  }
+
+.p-content-1-2 {
+      font-size: 14px;
+      margin-top: 50px;
+}
+
+/* content 1 end */
+
+/* red and white block */
+.red-block {
+      background-color: #C31815;
+      width: 100%;
+      height: 80px;
+      padding: 15px;
+}
+
+.white-block-in-red {
+      background-color: white;
+      height: 80%;
+      width: 20%;
+}
+/* red and white block end */
