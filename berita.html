@@ -12,59 +12,49 @@
     />
     <link rel="stylesheet" href="berita.css" />
   </head>
-  <body>
+  <body style="background-color:#EBEBE8 ;">
     <!-- container > row ? col -->
 
     <!-- Navbar Section -->
-    <section id="navbar">
-      <nav class="navbar navbar-expand-lg shadow-lg sticky-sm-top">
-        <div class="container-fluid container-navbar">
-          <a class="navbar-brand montserrat-extra-bold container-row-1" href="#"
-            >Nama Website</a
-          >
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+    <section>
+      <nav class="navbar navbar-expand-lg container-navbar fixed-top sticky-sm-top sticky-md-top">
+        <div class="container-fluid">
+          <a class="navbar-brand league-spartan navbar-brand-a ms-4" href="#">BisaSehat</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCentered" aria-controls="navbarCentered" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarCentered">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link lato-bold" href="index.html">Beranda</a>
+                <a class="nav-link active lato-bold " aria-current="page" href="index.html">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link lato-bold" href="berita.html">Berita</a>
+                <a class="nav-link active lato-bold " href="berita.html">Berita</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link lato-bold" href="#">Tentang Kami</a>
+                <a class="nav-link active lato-bold " href="berita.html">Fasilitas Kesehatan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link lato-bold" href="">Fakta Kesehatan</a>
+                <a class="nav-link active lato-bold " href="berita.html">Tips Sehat</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link lato-bold" href="">Tips Sehat</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link lato-bold" href="">Sumber daya kesehatan</a>
+                <a class="nav-link active lato-bold " href="berita.html">Tentang Kami</a>
               </li>
             </ul>
+          </div>
+          <div class="d-flex me-4">
+           <a href="">
+            <button type="button" class="button-6">Login</button>
+           </a>
           </div>
         </div>
       </nav>
     </section>
 
     <section id="content-1">
-      <div class="container container-content-1">
+      <div class="container-fluid container-content-1">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-12 col-sm-6 col-md-6 d-flex justify-content-center">
             <img
               src="img/buddha-bowl-dish-with-vegetables-legumes-top-view.jpg"
               alt=""
@@ -73,7 +63,7 @@
               class="img-fluid"
             />
           </div>
-          <div class="col-sm-6 container-header-news">
+          <div class="col-12 col-sm-5 col-md-5 container-header-news">
             <h1 class="ibm-plex-serif-bold h1-content-1">
               Pentingnya Konsumsi Makanan Sehat dari Sekarang
             </h1>
@@ -89,29 +79,95 @@
       </div>
     </section>
 
-    <section id="redBlock and whiteblock">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 red-block ">
-            <div class="row d-flex justify-content-center text-center">
-              <div class="col-sm-6 d-flex justify-content-center text-center">
-                <div
-                  class="white-block-in-red text-center justify-content-center col-sm-6"
-                >
-                  <p style="font-size: 18px; padding: 10px; ">breaking news</p>
-                </div>
-                <p class="lato-bold">Memakan Pepaya dapat mempermudah Buang air besar loh</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <h1>test</h1>
-          </div>
+    <section id="redBlock">
+      <div class="container-fluid kotak-panjang-merah mt-4">
+        <div class="col-sm-12 tengah">
+          <p class="p-red-block poppins-regular">Sekilas Berita Terkini : Jumlah stunting di indonesia mencapai 23 %</p>
         </div>
       </div>
     </section>
+
+    <section id="whiteBlock">
+      <div class="container-fluid kotak-panjang-putih bg-white mt-4">
+        <div class="col-sm-12 tengah">
+          <p class="lato-bold p-white-block" >Berita Terkini</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="card-berita-row-1">
+    <div class="container container-card-berita">
+      <div class="row">
+        <div class="col-12  col-sm-4">
+          <div class="card mx-auto" style="width: 400px;">
+            <img src="img/buddha-bowl-dish-with-vegetables-legumes-top-view.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12  col-sm-4">
+          <div class="card mx-auto" style="width: 400px;">
+            <img src="img/buddha-bowl-dish-with-vegetables-legumes-top-view.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 ">
+          <div class="card mx-auto" style="width: 400px;">
+            <img src="img/buddha-bowl-dish-with-vegetables-legumes-top-view.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="card-berita-row-1">
+    <div class="container container-card-berita">
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <div class="card mx-auto" style="width: 400px;">
+            <img src="img/buddha-bowl-dish-with-vegetables-legumes-top-view.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12  col-sm-4">
+          <div class="card mx-auto" style="width: 400px;">
+            <img src="img/buddha-bowl-dish-with-vegetables-legumes-top-view.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12  col-sm-4 ">
+          <div class="card mx-auto" style="width: 400px;">
+            <img src="img/buddha-bowl-dish-with-vegetables-legumes-top-view.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
