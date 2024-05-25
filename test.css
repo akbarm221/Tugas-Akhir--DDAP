@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
 html {
   padding: 0;
   margin: 0;
 }
-/* font style  */
 
+/* font style */
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -35,14 +36,7 @@ html {
   font-style: normal;
 }
 
-
-/* font style end */
-
 /* Navbar Section */
-.container-nav {
-  background-color : #778A35;
-}
-
 .container-navbar {
   background-color: #778A35;
 }
@@ -50,13 +44,11 @@ html {
 li {
   font-size: 17px;
   margin-left: 20px;
-
 }
 
 a {
   color: white !important;
 }
-
 
 .navbar-brand-a {
   font-size: 25px;
@@ -109,71 +101,8 @@ a {
   transform: translateY(0);
 }
 
-/* Button Navbar End */
-
 .login-signup {
-  margin-left : 20px;
+  margin-left: 20px;
 }
 
 /* Navbar Style end */
-
-/* Section 1 */
-.container-section-1 {
-    padding : 100px;
-}
-
-.h1-section-1 {
-    font-size : 48px;
-}
-
-
-/* Section 1 end */
-
-/* Section 2 */
-.custom-box {
-    background-color: #ffc107; /* Background warning color */
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding : 15px;
-    text-align: center;
-    width: 100%;
-}
-.custom-box img {
-    width: 30px; /* Adjust logo size */
-    height: 30px; /* Adjust logo size */
-    margin-right: 20px;
-}
-
-.custom-box p {
-    font-size: 20px;
-}
-
-
-
-@media (max-width : 768px) {
-
-/* Section 1 */
-.container-section-1 {
-    padding : 10px;
-}
-
-.h1-section-1 {
-    font-size : 48px;
-}
-
-.container-section-1 p {
-    text-align: justify;
-}
-/* Section 1 end */
-.custom-box-parent {
-    margin-top : 20px;
-}
-
-
-}
-
-
-
-/* section 2 end */

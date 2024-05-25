@@ -188,7 +188,9 @@ a {
 
 .card {
   transition: transform 0.3s, box-shadow 0.3s;
-  max-width: 500px;
+  max-width: 400px;
+  width: 400px;
+  
 }
 .card:hover {
   transform: scale(1.05);
@@ -202,13 +204,64 @@ a {
 
 /* Card Berita end */
 
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  margin-top : 60px;
+}
+.footer .navbar-brand {
+  margin-left: 20px;
+}
+.footer p {
+  margin: 0;
+  text-align: center;
+}
+
+.bisa {
+  font-size : 28px;
+  color: black;
+}
+
+.sehat {
+  font-size : 28px;
+  color : #35548a;
+}
+
 /* Responsive area */
 
 @media (max-width : 568px) {
+
+  /* content 1 */
+.container-content-1 {
+      padding: 50px;
+  }
+
+.container-header-news {
+      padding: 40px;
+  }
+
+.h1-content-1 {
+      font-size: 32px;
+      text-align: justify;
+  }
+
+.p-content-1 {
+      font-size: 18px;
+      text-align: justify;
+  }
+
+.p-content-1-2 {
+      font-size: 14px;
+      margin-top: 50px;
+}
+
+/* content 1 end */
+
   /* content */
   .container-content-1 {
-      padding: 50px;
-      margin-top: 50px;
+      padding: 10px;
+      margin-top: 90px;
   }
  /* content end */
  
@@ -226,13 +279,15 @@ a {
 
      /* red and white block */
 .kotak-panjang-merah {
-      width: 500px;
+      width: 350px;
+      max-width: 350px;
       height: 80px;
       background-color: #C31815;
     }
 
     .kotak-panjang-putih {
-      width: 500px;
+      width: 350px;
+      max-width: 350px;
       height: 80px;
     }
     
@@ -249,12 +304,24 @@ a {
     }
 
     .p-red-block {
-      font-size: 18px;
+      font-size: 10px;
       color: white;
+      text-align: center;
     }
 
 /* red and white block end */
+
+.card {
+  max-width: 300px;
+  width: 300px;
+  
 }
+
+.footer {
+  margin-top : 10px;
+}
+}
+
 
 @media (max-width : 768px) {
       .highLight-wrap {
