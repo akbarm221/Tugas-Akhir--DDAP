@@ -134,32 +134,50 @@ a {
 }
 /* Navbar Style end */
 
-.about-section, .contact-section {
-  padding: 40px 0;
-}
-.about-section img  {
-  width : 428px;
-  height: 520px;
-}
-.contact-section img {
-  width : 428px;
-  height: 520px;
+/* content */
+.content-section {
+    padding: 50px 0;
+  }
+  .content-section:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .image-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  .main-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* content end  */
+
+  @media (max-width : 768px) {
+    /* Navbar */
+.login-signup {
+  margin-left : 0px;
 }
 
-.about-section  {
-  padding: 20px;
+#btn-daftar {
+  margin-right: 10px;
 }
 
-.about-description {
-  padding: 20px;
+.container-login {
+  margin-left : 20px;
 }
 
-.form-row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.form-group {
-  flex: 1;
-  min-width: 200px;
-}
+/* Navbar end */
+  }

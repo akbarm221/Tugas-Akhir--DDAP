@@ -134,32 +134,94 @@ a {
 }
 /* Navbar Style end */
 
-.about-section, .contact-section {
+.hero-section {
+  background-color: #e0f7da;
+}
+.hero-section img {
+  width: 100%;
+  height: auto;
+}
+.highlight-section {
+  background-color: #ffe0b2;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+.news-section {
   padding: 40px 0;
 }
-.about-section img  {
-  width : 428px;
-  height: 520px;
-}
-.contact-section img {
-  width : 428px;
-  height: 520px;
+
+.news-section h2 {
+  font-weight: bold;
 }
 
-.about-section  {
-  padding: 20px;
-}
-
-.about-description {
-  padding: 20px;
-}
-
-.form-row {
+.news-item {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.form-group {
+.news-img {
+  width: 30%; /* Lebar gambar */
+  margin-right: 20px;
+}
+
+.news-img img {
+  width: 100%; /* Gambar mengisi seluruh lebar div */
+  height: auto;
+}
+
+.news-content {
+  width: 70%; /* Lebar konten teks */
+}
+
+.article-author img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.news-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.news-card img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+.news-card .card-body {
   flex: 1;
-  min-width: 200px;
+}
+
+/* Untuk responsif */
+@media (max-width: 768px) {
+  
+   /* Navbar */
+.login-signup {
+  margin-left : 0px;
+  }
+  
+  #btn-daftar {
+  margin-right: 10px;
+  }
+  
+  .container-login {
+  margin-left : 20px;
+  }
+  
+  /* Navbar end */
+
+  .news-item {
+      flex-direction: column;
+  }
+
+  .news-img,
+  .news-content {
+      width: 100%; /* Setelah perubahan menjadi vertikal, elemen mengisi lebar penuh */
+      margin-right: 0; /* Hapus margin kanan pada gambar */
+  }
 }

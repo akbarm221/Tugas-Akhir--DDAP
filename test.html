@@ -1,124 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BisaSehat</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="test.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Layout</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .footer {
+      background-color: #f8f9fa;
+      padding: 40px 0;
+    }
+    .footer .social-icons a {
+      color: #6c757d;
+      margin-right: 15px;
+      font-size: 24px;
+    }
+    .footer .footer-copy {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Lato:wght@700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <section>
-      <nav class="navbar navbar-expand-lg container-navbar fixed-top sticky-sm-top sticky-md-top">
-        <div class="container-fluid">
-          <a class="navbar-brand league-spartan navbar-brand-a ms-4" href="#">BisaSehat</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCentered" aria-controls="navbarCentered" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarCentered">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active lato-bold" aria-current="page" href="index.html">Beranda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active lato-bold" href="berita.html">Berita</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active lato-bold" href="fasilitasKesehatan.html">Sumber Daya Kesehatan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active lato-bold" href="event.html">Event</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active lato-bold" href="tentangKami.html">Tentang Kami</a>
-              </li>
-            </ul>
-          </div>
-          <div class="d-flex login-signup">
-            <a href="login.html">
-              <button type="button" class="button-6">Login</button>
-            </a>
-            <a href="login.html">
-              <button type="button" class="button-6">Sign Up</button>
-            </a>
+    <div style="height: 80vh;">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nemo nisi, quis enim fugit ab aperiam maiores debitis nobis ea, vitae commodi, aspernatur optio! Consequatur assumenda nobis inventore est corporis?</h1>
+    </div>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>Site name</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
-      </nav>
-    </section>
-
-    <div class="container my-5">
-      <div class="row main-event">
-          <div class="col-md-6">
-              <img src="https://via.placeholder.com/500x500" alt="Event Image">
-          </div>
-          <div class="col-md-6 event-description">
-              <h2>Event Lorem Ipsum</h2>
-              <h4>Subheading</h4>
-              <p>Rp0</p>
-              <p>Body text for describing why this product is simply a must-buy</p>
-              <button class="btn btn-dark">DAFTAR GRATIS</button>
-              <p>Text box for additional details or fine print</p>
-          </div>
+        <div class="col-md-3">
+          <h5>Topic</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Topic</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Topic</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Page</a></li>
+          </ul>
+        </div>
       </div>
-
-      <div class="row event-lainnya my-5">
-          <div class="col-12">
-              <h3>Event lainnya</h3>
-          </div>
-          <div class="col-md-4 event-item">
-              <div class="card">
-                  <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Event 1">
-                  <div class="card-body">
-                      <h5 class="card-title">Event 1</h5>
-                      <p class="card-text">Body text for first product</p>
-                      <p>Rp10000</p>
-                      <button class="btn btn-dark">DAFTAR</button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 event-item">
-              <div class="card">
-                  <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Event 2">
-                  <div class="card-body">
-                      <h5 class="card-title">Event 2</h5>
-                      <p class="card-text">Body text for second product</p>
-                      <p>Rp20000</p>
-                      <button class="btn btn-dark">DAFTAR</button>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-4 event-item">
-              <div class="card">
-                  <img class="card-img-top" src="https://via.placeholder.com/300x200" alt="Event 3">
-                  <div class="card-body">
-                      <h5 class="card-title">Event 3</h5>
-                      <p class="card-text">Body text for third product</p>
-                      <p>Rp50000</p>
-                      <button class="btn btn-dark">DAFTAR</button>
-                  </div>
-              </div>
-          </div>
+      <div class="row">
+        <div class="col-12 text-center footer-copy">
+          © 2024 Nama Perusahaan. Seluruh hak cipta dilindungi undang-undang.
+        </div>
       </div>
-  </div>
-  
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
-  </html>
-  
+    </div>
+  </footer>
 
-   
-
-
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

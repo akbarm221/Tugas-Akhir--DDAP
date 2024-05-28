@@ -1,23 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
 /* font style  */
 
-.montserrat {
+.montserrat-regular {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: 400;
   font-style: normal;
 }
 
-.montserrat-extra-bold {
-  font-family: "Montserrat", sans-serif !important;
-  font-optical-sizing: auto !important;
-  font-weight: 700 !important;
-  font-style: normal !important;
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
 }
 
 .lato-bold {
@@ -27,32 +55,45 @@
 }
 
 .poppins-regular {
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.ibm-plex-serif-bold {
-      font-family: "IBM Plex Serif", serif;
-      font-weight: 700;
-      font-style: normal;
-    }
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
-.league-spartan {
-      font-family: "League Spartan", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 700;
-      font-style: normal;
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+  .league-spartan {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
   }
-    
-
+  
+  /* font style end */
+  
 /* Navbar Section */
 .container-nav {
-  background-color : #778A35;
+  background-color : #388E3C;
 }
 
 .container-navbar {
-  background-color: #778A35;
+  background-color: #388E3C;
 }
 
 li {
@@ -72,56 +113,28 @@ a {
 }
 
 /* Button Navbar */
-.button-6 {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: #EBEBE8;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: black;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
+.button-8 {
+  border : 1px white solid;
+  width: 70px;
+  height: 35px;
+  background-color: #388E3C;
+  border-radius: 3px;
+  color : white;
+  transition-duration: 0.3s;
 }
 
-.button-6:hover,
-.button-6:focus {
-  background-color: #35548a;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+.button-8:hover {
+  transition: ease-in-out;
+  background-color: white;
+  color: #388E3C;
 }
 
-.button-6:hover {
-  transform: translateY(-1px);
+#btn-daftar {
+  margin-right: 20px;
 }
-
-.button-6:active {
-  background-color: #35548a;
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
-}
-
-/* Button Navbar End */
-
-
 /* Navbar Style end */
 
+  
 /* content 1 */
 .container-content-1 {
       padding: 50px;
