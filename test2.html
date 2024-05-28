@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Kesehatan</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .quote-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .quote-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .quote-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .carousel-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: fit-content;
+        }
+        .card {
+            background-color: #32cd32;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 400px;
+            height: auto;
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .quote-text {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .author-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .author-name {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 5px 0 0 0;
+        }
+        .author-role {
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .quote-section h2 {
+                font-size: 1.8rem;
+            }
+            .quote-section p {
+                font-size: 1rem;
+            }
+            .card {
+                padding: 15px;
+                width: 90%;
+            }
+            .quote-text {
+                font-size: 1rem;
+            }
+            .author-name {
+                font-size: 1rem;
+            }
+            .author-role {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container quote-section">
+        <h2>Quotes Kesehatan</h2>
+        <p>Ini nih kata mereka soal pentingnya menjaga kesehatan</p>
+        
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="card">
+                    <img src="https://via.placeholder.com/50" alt="Jim Rohn">
+                    <div class="author-info">
+                        <h5 class="author-name">Jim Rohn</h5>
+                        <p class="author-role">Penulis, Motivator</p>
+                    </div>
+                    <p class="quote-text">"Take care of your body. It’s the only place you have to live"</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/50" alt="Mahatma Gandhi">
+                    <div class="author-info">
+                        <h5 class="author-name">Mahatma Gandhi</h5>
+                        <p class="author-role">Aktivis Sosial</p>
+                    </div>
+                    <p class="quote-text">"It is health that is real wealth and not pieces of gold and silver"</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/50" alt="Florence Nightingale">
+                    <div class="author-info">
+                        <h5 class="author-name">Florence Nightingale</h5>
+                        <p class="author-role">Perawat</p>
+                    </div>
+                    <p class="quote-text">"The very first requirement in a hospital is that it should do the sick no harm."</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/50" alt="Benjamin Franklin">
+                    <div class="author-info">
+                        <h5 class="author-name">Benjamin Franklin</h5>
+                        <p class="author-role">Penemu, Diplomat</p>
+                    </div>
+                    <p class="quote-text">"An apple a day keeps the doctor away."</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/50" alt="Gene Tunney">
+                    <div class="author-info">
+                        <h5 class="author-name">Gene Tunney</h5>
+                        <p class="author-role">Petinju</p>
+                    </div>
+                    <p class="quote-text">"To enjoy the glow of good health, you must exercise."</p>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/50" alt="Anne Wilson Schaef">
+                    <div class="author-info">
+                        <h5 class="author-name">Anne Wilson Schaef</h5>
+                        <p class="author-role">Psikolog</p>
+                    </div>
+                    <p class="quote-text">"Good health is not something we can buy. However, it can be an extremely valuable savings account."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carouselWrapper = document.querySelector('.carousel-wrapper');
+            const carouselItems = document.querySelectorAll('.card');
+            const totalItems = carouselItems.length;
+            let currentIndex = 0;
+            let itemWidth = carouselItems[0].clientWidth;
+
+            function cloneItems() {
+                carouselItems.forEach(item => {
+                    const clone = item.cloneNode(true);
+                    carouselWrapper.appendChild(clone);
+                });
+            }
+
+            function updateCarousel() {
+                carouselWrapper.style.transition = 'transform 0.5s ease';
+                carouselWrapper.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+            }
+
+            function autoSlide() {
+                currentIndex++;
+                if (currentIndex >= totalItems) {
+                    currentIndex = 0;
+                    carouselWrapper.style.transition = 'none';
+                    carouselWrapper.style.transform = 'translateX(0px)';
+                    setTimeout(() => {
+                        carouselWrapper.style.transition = 'transform 0.5s ease';
+                        updateCarousel();
+                    }, 50); // Allow time for the transition to reset
+                } else {
+                    updateCarousel();
+                }
+            }
+
+            cloneItems();
+            setInterval(autoSlide, 3000); // Change slide every 3 seconds
+
+            window.addEventListener('resize', () => {
+                itemWidth = carouselItems[0].clientWidth;
+                updateCarousel();
+            });
+
+            updateCarousel();
+        });
+    </script>
+</body>
+</html>
