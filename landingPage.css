@@ -259,6 +259,36 @@ a {
           border-radius: 10px;
       }
 
+      /* About singkat */
+      .container-about {
+        margin-top : 50px;
+        letter-spacing: 1px;
+      }
+
+      .footer {
+        background-color: #28a745;
+        color: #ffffff;
+        padding: 20px 0;
+      }
+      .footer .social-icons a {
+        color: #ffffff;
+        margin-right: 15px;
+        font-size: 24px;
+      }
+      .footer .social-icons a:hover {
+        color: #dddddd;
+      }
+      .footer h5, .footer p {
+        margin: 0;
+      }
+      .footer .footer-copy {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+
+
+
 /* Responsive */
 
 @media (max-width : 768px) {

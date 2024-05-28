@@ -134,6 +134,10 @@ a {
 }
 /* Navbar Style end */
 
+.jumbotron {
+  margin-top : 50px;
+}
+
 .hero-section {
   background-color: #e0f7da;
 }
@@ -141,6 +145,8 @@ a {
   width: 100%;
   height: auto;
 }
+
+
 .highlight-section {
   background-color: #ffe0b2;
   text-align: center;
