@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+/* font style  */
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+  .league-spartan {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  /* font style end */
+  
+/* Navbar Section */
+.container-nav {
+  background-color : #388E3C;
+}
+
+.container-navbar {
+  background-color: #388E3C;
+}
+
+li {
+  font-size: 17px;
+  margin-left: 20px;
+
+}
+
+a {
+  color: white !important;
+}
+
+
+.navbar-brand-a {
+  font-size: 25px;
+  color: white;
+}
+
+/* Button Navbar */
+.button-8 {
+  border : 1px white solid;
+  width: 70px;
+  height: 35px;
+  background-color: #388E3C;
+  border-radius: 3px;
+  color : white;
+  transition-duration: 0.3s;
+}
+
+.button-8:hover {
+  transition: ease-in-out;
+  background-color: white;
+  color: #388E3C;
+}
+
+#btn-daftar {
+  margin-right: 20px;
+}
+/* Navbar Style end */
+
+/* content */
+.content-section {
+    padding: 50px 0;
+  }
+  .content-section:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .image-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  .main-image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* content end  */
+
+  @media (max-width : 768px) {
+    /* Navbar */
+.login-signup {
+  margin-left : 0px;
+}
+
+#btn-daftar {
+  margin-right: 10px;
+}
+
+.container-login {
+  margin-left : 20px;
+}
+
+/* Navbar end */
+  }

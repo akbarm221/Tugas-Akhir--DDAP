@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 /* font style  */
 
 .montserrat-regular {
@@ -43,6 +44,15 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
@@ -132,6 +142,12 @@ a {
 #btn-daftar {
   margin-right: 20px;
 }
+
+.nav-link:hover {
+  color:#C2FF7B !important ;
+  transition: 0.3s !important;
+  transition: ease-in-out;
+}
 /* Navbar Style end */
 
 
@@ -160,6 +176,10 @@ a {
 .p1-landing-page {
     color: black;
     text-align: justify;
+}
+
+.kolom-landing-page-content {
+  padding : 30px;
 }
 
 /* Button Content */
@@ -220,18 +240,21 @@ a {
           font-size: 2rem;
           font-weight: bold;
           margin-bottom: 20px;
-          
       }
 
       .stats-card {
-          background-color: #d4edda;
-          color: #155724;
+          background-color: #FFA500;
+          color: white;
           padding: 20px;
           border-radius: 10px;
           text-align: center;
           display: flex;
           justify-content: space-around;
           align-items: center;
+      }
+      
+      .stats-card p {
+        font-size: 20px;
       }
 
       .stat-item {
@@ -254,10 +277,72 @@ a {
           border-radius: 50%;
       }
 
-      .category-card img {
-          width: 100%;
-          border-radius: 10px;
-      }
+      
+
+      .quote-section {
+        padding: 50px 0;
+        text-align: center;
+    }
+    .quote-section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .quote-section p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .carousel-wrapper {
+        display: flex;
+        transition: transform 0.5s ease;
+        width: fit-content;
+    }
+    .card {
+        background-color: #32cd32;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        width: 400px;
+        height: auto;
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card img {
+        border-radius: 50%;
+        margin-bottom: 15px;
+        width: 75px;
+        height: 75px;
+    }
+    .quote-text {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .author-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .author-name {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 5px 0 0 0;
+    }
+    .author-role {
+        font-size: 0.9rem;
+        margin: 0;
+    }
 
       /* About singkat */
       .container-about {
@@ -265,6 +350,35 @@ a {
         letter-spacing: 1px;
       }
 
+      /*  */
+
+      /* Categories */
+      .category-card img {
+          width: 300px;
+          height: 262px;;
+          border-radius: 10px;
+      }
+
+      .btn-categories-selection {
+        border : 1px white solid;
+        width: 305px;
+        height: 79px;
+        background-color: #388E3C;
+        border-radius: 6px;
+        color : white;
+        transition-duration: 0.3s;
+        font-size: 24px;
+      }
+      
+      .btn-categories-selection:hover {
+        transition: ease-in-out;
+        background-color: #28a745;
+        color: white;
+      }
+
+      
+
+      /* FOOTER */
       .footer {
         background-color: #28a745;
         color: #ffffff;
@@ -286,7 +400,15 @@ a {
         margin-top: 10px;
       }
 
+     
 
+      .footer-social-icon img {
+        width: 25px;
+        height: 25px;
+      }
+      
+
+/* FOOTER END */
 
 
 /* Responsive */
@@ -308,11 +430,7 @@ a {
 
 /* Navbar end */
 
-  img {
-    width: 700px;
-    height: 500px;
-    padding-top: 50px;
-  }
+
 
   .content-wrap {
   padding: 100px 25px 0px 25px;
@@ -320,10 +438,17 @@ a {
   
 }
 
+/* stats section */
+.stats-card p {
+  font-size: 1em;
+}
+/*  */
 
-  img {
-    width: 500px;
-    padding-top: 50px;
+
+
+  .card img {
+    width: 75px;
+    height: 75px;
   }
 
   /* Button Content */
@@ -373,5 +498,9 @@ a {
 }
 
 /* Content Style end */
+
+.footer-social-icon {
+  margin-left: 17px;
+}
 
 }

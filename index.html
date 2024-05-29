@@ -1,378 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nama Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="landingPage.css">
-    <style>
-   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="landingPage.css" />
+  </head>
+  <body>
+    <section id="navbar">
+      <nav
+        class="navbar navbar-expand-lg container-navbar fixed-top sticky-sm-top sticky-md-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand league-spartan navbar-brand-a ms-4" href="#"
+            >Bisa<span style="color: #c2ff7b">Sehat</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCentered"
+            aria-controls="navbarCentered"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-
-      .quote-section {
-          padding: 50px 0;
-          text-align: center;
-      }
-      .quote-section h2 {
-          font-size: 2.5rem;
-          margin-bottom: 10px;
-      }
-      .quote-section p {
-          font-size: 1.2rem;
-          margin-bottom: 30px;
-      }
-      .carousel-container {
-          position: relative;
-          width: 100%;
-          overflow: hidden;
-          display: flex;
-          justify-content: center;
-      }
-      .carousel-wrapper {
-          display: flex;
-          transition: transform 0.5s ease;
-          width: fit-content;
-      }
-      .card {
-          background-color: #32cd32;
-          color: white;
-          border: none;
-          border-radius: 10px;
-          padding: 20px;
-          margin: 10px;
-          width: 400px;
-          height: auto;
-          flex: 0 0 auto;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
-      .card img {
-          border-radius: 50%;
-          margin-bottom: 15px;
-      }
-      .quote-text {
-          font-size: 1.1rem;
-          text-align: center;
-          margin-bottom: 20px;
-      }
-      .author-info {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-      }
-      .author-name {
-          font-size: 1.1rem;
-          font-weight: bold;
-          margin: 5px 0 0 0;
-      }
-      .author-role {
-          font-size: 0.9rem;
-          margin: 0;
-      }
-      @media (max-width: 768px) {
-          .quote-section h2 {
-              font-size: 1.8rem;
-          }
-          .quote-section p {
-              font-size: 1rem;
-          }
-          .card {
-              padding: 15px;
-              width: 90%;
-          }
-          .quote-text {
-              font-size: 1rem;
-          }
-          .author-name {
-              font-size: 1rem;
-          }
-          .author-role {
-              font-size: 0.8rem;
-          }
-      }
-  </style>
-    
-</head>
-<body>
-
-
-      <section id="navbar">
-        <nav class="navbar navbar-expand-lg container-navbar fixed-top sticky-sm-top sticky-md-top">
-          <div class="container-fluid">
-            <a class="navbar-brand league-spartan navbar-brand-a ms-4" href="#">Bisa<span style="color: #C2FF7B;">Sehat</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCentered" aria-controls="navbarCentered" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-center" id="navbarCentered">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active poppins-medium " aria-current="page" href="index.html">Beranda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active poppins-medium " href="berita1.html">Berita</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active poppins-medium " href="tipsSehat.html">Tips Sehat</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active poppins-medium " href="sumberDayaKesehatan.html">Sumber Daya Kesehatan</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active poppins-medium " href="event.html">Event</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active poppins-medium " href="tentangKami.html">Tentang Kami</a>
-                </li>
-              </ul>
-            </div>
-            <div class="d-flex container-login">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarCentered"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active poppins-medium"
+                  style="color: #C2FF7B !important;"
+                  aria-current="page"
+                  href="index.html"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active poppins-medium" href="beritaMain.html"
+                  >Berita</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active poppins-medium" href="tipsSehat.html"
+                  >Tips Sehat</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active poppins-medium" href="sdkMain.html"
+                  >Sumber Daya Kesehatan</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active poppins-medium" href="event.html"
+                  >Event</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active poppins-medium"
+                  href="tentangKami.html"
+                  >Tentang Kami</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex container-login">
             <div class="d-flex login-signup">
-                <a href="">
-              <button class="button-8" type="button" id="btn-daftar">Daftar</button>
-            </a>
-            </div>
-            <div class="d-flex login-signup">
-                <a href="login.html">
-              <button class="button-8" type="button">Masuk</button>
+              <a href="">
+                <button class="button-8" type="button" id="btn-daftar">
+                  Daftar
+                </button>
               </a>
-             </div>
+            </div>
+            <div class="d-flex login-signup">
+              <a href="login.html">
+                <button class="button-8" type="button">Masuk</button>
+              </a>
+            </div>
           </div>
         </div>
-        </nav>
-      </section>
+      </nav>
+    </section>
 
-     <section id="landing-page-content">
+    <section id="landing-page-content">
       <div class="container-fluid content-wrap">
         <div class="row">
-          <div class="col-md-6" >
-            <h1 class="h1-landing-page lato-bold">Jangan Tunggu Sakit 
-              Cegah dengan Cara Yang Sehat!
-              </h1>
-            <p class="p1-landing-page montserrat pt-4" style="font-weight: 400 !important;" >Temukan artikel, tips, saran, dan sumber daya kesehatan 
-              yang bermanfaat di sini Jelajahi berbagai topik kesehatan 
-              mulai dari gizi, olahraga, pencegahan penyakit  dan layanan
-              kesehatan yang tersedia di Indonesia. <br>
-              <br>
-              
-              Ayo mulai perjalanan Anda menuju gaya hidup yang lebih sehat hari ini!</p>
-              <button type="button" class="button-5">Ayo Hidup Sehat</button>
-
+          <div class="col-md-6 kolom-landing-page-content">
+            <h1 class="h1-landing-page lato-bold">
+              Jangan Tunggu Sakit Cegah dengan Cara Yang Sehat!
+            </h1>
+            <p
+              class="p1-landing-page montserrat pt-4 text-justify"
+              style="font-weight: 400 !important"
+            >
+              Temukan artikel, tips, saran, dan sumber daya kesehatan Tubuh yang
+              sehat adalah salah satu kunci utama untuk mencapai hidup yang
+              bahagia. Pola hidup sehat merupakan langkah penting yang dapat
+              memberikan manfaat besar bagi Anda. Kami menawarkan berbagai
+              informasi, berita, artikel dan tips praktis yang dapat membantu
+              Anda menjalani kehidupan yang lebih sehat.
+            </p>
+            <button type="button" class="button-5 mt-1 poppins-semibold">Ayo Hidup Sehat</button>
           </div>
-         
+
           <div class="col-md-6 d-flex justify-content-end float-end">
-            <img src="img/docter-7.svg" alt="" class="img-fluid" width="1000px">
+            <img
+              src="img/dokterLandingPage.svg"
+              alt=""
+              class="img-fluid"
+              width="500px"
+            />
           </div>
         </div>
       </div>
-     </section>
+    </section>
 
-     <section class="section text-center">
+    <section class="section text-center" style="background-color: #f1ffdd">
       <div class="container">
-          <h2 class="section-title">Menjaga Kesehatan Adalah Tanggungjawab Diri Sendiri</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="stats-card mt-4">
-              <div class="stat-item">
-                  <h3>1000</h3>
-                  <p>Pengguna Aktif</p>
-              </div>
-              <div class="stat-item">
-                  <h3>1000</h3>
-                  <p>Kelas Dihadiri</p>
-              </div>
-              <div class="stat-item">
-                  <h3>1000</h3>
-                  <p>Artikel Dibaca</p>
-              </div>
-              <div class="stat-item">
-                  <h3>1000</h3>
-                  <p>Umpan Balik Diterima</p>
-              </div>
+        <h2 class="section-title poppins-semibold" style="letter-spacing: 1px;">
+          Kesehatan adalah Tanggung jawab<br>Diri Sendiri
+        </h2>
+        <p class="inter-regular">
+          Memelihara kesehatan bukan hanya pilihan, melainkan kewajiban yang
+          harus kita junjung tinggi. Setiap keputusan yang kita buat, setiap
+          makanan yang kita konsumsi, setiap gerak langkah kita, semua itu
+          adalah bagian dari tanggung jawab kita terhadap diri sendiri. Jadi,
+          mari kita jadikan kesehatan sebagai prioritas, bukan sebagai pilihan.
+          Mulailah dari sekarang, mulailah dari hal kecil, dan lihatlahbagaimana
+          perubahan itu membawa dampak besar dalam hidup Anda.
+        </p>
+        <div class="stats-card mt-4">
+          <div class="stat-item">
+            <h3 class="poppins-semibold">17,9+ juta</h3>
+            <p class="inter-regular">kematian di dunia akibat penyakit Kardiovascular</p>
           </div>
-      </div>
-  </section>
-
-  <!-- Quotes Section -->
-   <!-- Quotes Section -->
-   <div class="container quote-section">
-    <h2>Quotes Kesehatan</h2>
-    <p>Ini nih kata mereka soal pentingnya menjaga kesehatan</p>
-    
-    <div class="carousel-container">
-        <div class="carousel-wrapper">
-            <div class="card">
-                <img src="https://via.placeholder.com/50" alt="Jim Rohn">
-                <div class="author-info">
-                    <h5 class="author-name">Jim Rohn</h5>
-                    <p class="author-role">Penulis, Motivator</p>
-                </div>
-                <p class="quote-text">"Take care of your body. It’s the only place you have to live"</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/50" alt="Mahatma Gandhi">
-                <div class="author-info">
-                    <h5 class="author-name">Mahatma Gandhi</h5>
-                    <p class="author-role">Aktivis Sosial</p>
-                </div>
-                <p class="quote-text">"It is health that is real wealth and not pieces of gold and silver"</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/50" alt="Florence Nightingale">
-                <div class="author-info">
-                    <h5 class="author-name">Florence Nightingale</h5>
-                    <p class="author-role">Perawat</p>
-                </div>
-                <p class="quote-text">"The very first requirement in a hospital is that it should do the sick no harm."</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/50" alt="Benjamin Franklin">
-                <div class="author-info">
-                    <h5 class="author-name">Benjamin Franklin</h5>
-                    <p class="author-role">Penemu, Diplomat</p>
-                </div>
-                <p class="quote-text">"An apple a day keeps the doctor away."</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/50" alt="Gene Tunney">
-                <div class="author-info">
-                    <h5 class="author-name">Gene Tunney</h5>
-                    <p class="author-role">Petinju</p>
-                </div>
-                <p class="quote-text">"To enjoy the glow of good health, you must exercise."</p>
-            </div>
-            <div class="card">
-                <img src="https://via.placeholder.com/50" alt="Anne Wilson Schaef">
-                <div class="author-info">
-                    <h5 class="author-name">Anne Wilson Schaef</h5>
-                    <p class="author-role">Psikolog</p>
-                </div>
-                <p class="quote-text">"Good health is not something we can buy. However, it can be an extremely valuable savings account."</p>
-            </div>
-        </div>
-    </div>
-</div>
-  <!-- About Section -->
-  <section class="section text-center">
-      <div class="container">
-         
-          <div class="row mt-4">
-              <div class="col-12 col-md-6">
-                  <img src="https://via.placeholder.com/600x400" alt="About Image" class="img-fluid">
-              </div>
-              <div class="col-12 col-md-6 align-items-center text-start container-about">
-                    <h1>Apa itu BisaSehat?</h1>
-                      <p class="">BisaSehat adalah suatu platform kesehatan yang menyediakan berbagai informasi dan sumber daya untuk membantu Anda menjaga kesehatan. Mulai dari tips kesehatan, informasi fasilitas kesehatan terdekat, hingga komunitas yang mendukung Anda dalam perjalanan menuju hidup sehat dan bahagia.</p>
-                      <a href="#" class="btn btn-success">Selengkapnya</a>
-              </div>
+          <div class="stat-item">
+            <h3  class="poppins-semibold" >422+ juta</h3>
+            <p class="inter-regular" >penderita Diabetes Tipe 2 di seluruh dunia</p>
           </div>
-      </div>
-  </section>
-
-  <!-- Categories Section -->
-  <section class="section section-light text-center">
-      <div class="container">
-          <h2 class="section-title">Kategori</h2>
-          <div class="row mt-4">
-              <div class="col-6 col-md-3 mb-4">
-                  <div class="category-card">
-                      <img src="https://via.placeholder.com/300x200" alt="Berita">
-                      <h5 class="mt-2">Berita</h5>
-                  </div>
-              </div>
-              <div class="col-6 col-md-3 mb-4">
-                  <div class="category-card">
-                      <img src="https://via.placeholder.com/300x200" alt="Tips Sehat">
-                      <h5 class="mt-2">Tips Sehat</h5>
-                  </div>
-              </div>
-              <div class="col-6 col-md-3 mb-4">
-                  <div class="category-card">
-                      <img src="https://via.placeholder.com/300x200" alt="Sumber Daya Kesehatan">
-                      <h5 class="mt-2">Sumber Daya Kesehatan</h5>
-                  </div>
-              </div>
-              <div class="col-6 col-md-3 mb-4">
-                  <div class="category-card">
-                      <img src="https://via.placeholder.com/300x200" alt="Event">
-                      <h5 class="mt-2">Event</h5>
-                  </div>
-              </div>
+          <div class="stat-item">
+            <h3  class="poppins-semibold">63+ Juta</h3>
+            <p class="inter-regular">Penderita hipertensi di Indonesia</p>
           </div>
+          <div class="stat-item">
+            <h3  class="poppins-semibold" >54+ juta</h3>
+            <p class="inter-regular">Kasus Obesitas <br>di indonesia</p>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
 
-<footer class="footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4 text-md-left ">
-          <h5>BisaSehat</h5>
-        </div>
-        <div class="col-md-4 text-center">
-          <p>© 2024 BisaSehat. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
-        </div>
-        <div class="col-md-4 text-md-right text-center">
-          <div class="social-icons">
-            <span>BisaSehat</span>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+    <!-- Quotes Section -->
+    <div class="container quote-section">
+      <h2 class="d-flex justify-content-start poppins-semibold">Quotes Kesehatan</h2>
+      <p  class="d-flex justify-content-start inter-regular">Ini nih kata mereka soal pentingnya menjaga kesehatan</p>
+
+      <div class="row">
+        <div class="carousel-container">
+          <div class="carousel-wrapper">
+            <div class="card shadow-sm">
+              <img
+                src="img/Jim_rohn.jpg"
+                alt="Jim Rohn"
+                class="img-fluid"
+              />
+              <div class="author-info">
+                <h5 class="author-name">Jim Rohn</h5>
+                <p class="author-role">Penulis, Motivator</p>
+              </div>
+              <p class="quote-text">
+                "Take care of your body. It’s the only place you have to live"
+              </p>
+            </div>
+            <div class="card shadow-sm">
+              <img
+                src="img/Mahatma Gandhi.jpg"
+                alt="Mahatma Gandhi"
+                class="img-fluid"
+              />
+              <div class="author-info">
+                <h5 class="author-name">Mahatma Gandhi</h5>
+                <p class="author-role">Aktivis Sosial</p>
+              </div>
+              <p class="quote-text">
+                "It is health that is real wealth and not pieces of gold and
+                silver"
+              </p>
+            </div>
+            <div class="card shadow-sm">
+              <img
+                src="img/Florence_Nightingale_(H_Hering_NPG_x82368).jpg"
+                alt="Florence Nightingale"
+                class="img-fluid"
+              />
+              <div class="author-info">
+                <h5 class="author-name">Florence Nightingale</h5>
+                <p class="author-role">Perawat</p>
+              </div>
+              <p class="quote-text">
+                "The very first requirement in a hospital is that it should do
+                the sick no harm."
+              </p>
+            </div>
+            <div class="card shadow-sm">
+              <img
+                src="img/Benjamin Franklin.jpg"
+                alt="Benjamin Franklin"
+                class="img-fluid"
+              />
+              <div class="author-info">
+                <h5 class="author-name">Benjamin Franklin</h5>
+                <p class="author-role">Penemu, Diplomat</p>
+              </div>
+              <p class="quote-text">"An apple a day keeps the doctor away."</p>
+            </div>
+            <div class="card shadow-sm">
+              <img
+                src="img/hippocrates-ancient-greek-physician-sheila-terry.jpg"
+                alt="Gene Tunney"
+                class="img-fluid"
+              />
+              <div class="author-info">
+                <h5 class="author-name">Gene Tunney</h5>
+                <p class="author-role">Petinju</p>
+              </div>
+              <p class="quote-text">
+                "To enjoy the glow of good health, you must exercise."
+              </p>
+            </div>
+            <div class="card shadow-sm">
+              <img
+                src="img/hippocrates-ancient-greek-physician-sheila-terry.jpg"
+                alt="Anne Wilson Schaef"
+                class="img-fluid"
+              />
+              <div class="author-info">
+                <h5 class="author-name">Anne Wilson Schaef</h5>
+                <p class="author-role">Psikolog</p>
+              </div>
+              <p class="quote-text">
+                "Good health is not something we can buy. However, it can be an
+                extremely valuable savings account."
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+    <!-- About Section -->
+    <section class="section text-center">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-12 col-md-6">
+            <img
+              src="https://via.placeholder.com/600x400"
+              alt="About Image"
+              class="img-fluid"
+            />
+          </div>
+          <div
+            class="col-12 col-md-6 align-items-center text-start container-about"
+          >
+            <h1 class="poppins-semibold">Apa itu BisaSehat?</h1>
+            <p class="inter-regular mt-4">
+              BisaSehat adalah suatu platform kesehatan yang menyediakan
+              berbagai informasi dan sumber daya untuk membantu Anda menjaga
+              kesehatan. Mulai dari tips kesehatan, informasi fasilitas
+              kesehatan terdekat, hingga komunitas yang mendukung Anda dalam
+              perjalanan menuju hidup sehat dan bahagia.
+            </p>
+            <a href="">
+            <button type="button" class="button-5 mt-1 poppins-semibold">Selengkapnya</button>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const carouselWrapper = document.querySelector('.carousel-wrapper');
-            const carouselItems = document.querySelectorAll('.card');
-            const totalItems = carouselItems.length;
-            let currentIndex = 0;
-            let itemWidth = carouselItems[0].clientWidth;
+    <!-- Categories Section -->
+    <section class="section section-light text-center">
+      <div class="container">
+        <h2 class="section-title d-flex justify-content-start">Kategori</h2>
+        <p class="d-flex justify-content-start">
+          Cari informasi untuk perjalanan hidup sehatmu
+        </p>
+        <div class="row mt-4">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="category-card">
+              <img src="img/berita.jpg" alt="Berita" class="img-fluid" />
+              <a href="">
+                <button
+                  class="btn btn-categories-selection poppins-semibold mt-2 w-100"
+                >
+                  Berita dan Artikel
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="category-card">
+              <img
+                src="img/tips sehat.jpg"
+                alt="Tips Sehat"
+                class="img-fluid"
+              />
+              <a href="">
+                <button
+                  class="btn btn-categories-selection poppins-semibold mt-2 w-100"
+                >
+                  Tips Kesehatan
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="category-card">
+              <img
+                src="img/faskes.jpg"
+                alt="Sumber Daya Kesehatan"
+                class="img-fluid"
+              />
+              <a href="">
+                <button
+                  class="btn btn-categories-selection poppins-semibold mt-2 w-100"
+                >
+                  Sumber Daya Kesehatan
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div class="category-card">
+              <img src="img/event.jpg" alt="Event" class="img-fluid" />
+              <a href="">
+                <button
+                  class="btn btn-categories-selection poppins-semibold mt-2 w-100"
+                >
+                  Event
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            function cloneItems() {
-                carouselItems.forEach(item => {
-                    const clone = item.cloneNode(true);
-                    carouselWrapper.appendChild(clone);
-                });
-            }
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center">
+            <a class="navbar-brand league-spartan navbar-brand-a ms-4" href="#"
+            >Bisa<span style="color: #c2ff7b">Sehat</span></a
+          >
+          </div>
+          <div class="col-md-4 text-center">
+            <p>© 2024 BisaSehat. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
+          </div>
+          <div class="col-md-4 footer-social-icon">
+            <div class="social-icons d-flex justify-content-center align-items-center">
+              <a href="#"><img src="img/Facebook.svg" alt=""></i></a>
+              <a href="#"><img src="img/Tiktok.svg" alt=""></i></a>
+              <a href="#"><img src="img/Youtube.svg" alt=""></i></a>
+              <a href="#"><img src="img/instagram.svg" alt=""></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-            function updateCarousel() {
-                carouselWrapper.style.transition = 'transform 0.5s ease';
-                carouselWrapper.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-            }
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carouselWrapper = document.querySelector(".carousel-wrapper");
+        const carouselItems = document.querySelectorAll(".card");
+        const totalItems = carouselItems.length;
+        let currentIndex = 0;
+        let itemWidth = carouselItems[0].clientWidth;
 
-            function autoSlide() {
-                currentIndex++;
-                if (currentIndex >= totalItems) {
-                    currentIndex = 0;
-                    carouselWrapper.style.transition = 'none';
-                    carouselWrapper.style.transform = 'translateX(0px)';
-                    setTimeout(() => {
-                        carouselWrapper.style.transition = 'transform 0.5s ease';
-                        updateCarousel();
-                    }, 50); // Allow time for the transition to reset
-                } else {
-                    updateCarousel();
-                }
-            }
+        function cloneItems() {
+          carouselItems.forEach((item) => {
+            const clone = item.cloneNode(true);
+            carouselWrapper.appendChild(clone);
+          });
+        }
 
-            cloneItems();
-            setInterval(autoSlide, 3000); // Change slide every 3 seconds
+        function updateCarousel() {
+          carouselWrapper.style.transition = "transform 0.5s ease";
+          carouselWrapper.style.transform = `translateX(-${
+            currentIndex * itemWidth
+          }px)`;
+        }
 
-            window.addEventListener('resize', () => {
-                itemWidth = carouselItems[0].clientWidth;
-                updateCarousel();
-            });
-
+        function autoSlide() {
+          currentIndex++;
+          if (currentIndex >= totalItems) {
+            currentIndex = 0;
+            carouselWrapper.style.transition = "none";
+            carouselWrapper.style.transform = "translateX(0px)";
+            setTimeout(() => {
+              carouselWrapper.style.transition = "transform 0.5s ease";
+              updateCarousel();
+            }, 50); // Allow time for the transition to reset
+          } else {
             updateCarousel();
+          }
+        }
+
+        cloneItems();
+        setInterval(autoSlide, 3000); // Change slide every 3 seconds
+
+        window.addEventListener("resize", () => {
+          itemWidth = carouselItems[0].clientWidth;
+          updateCarousel();
         });
+
+        updateCarousel();
+      });
     </script>
-</body>
+  </body>
 </html>

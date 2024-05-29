@@ -1,0 +1,80 @@
+<section id="navbar">
+      <nav
+        class="navbar navbar-expand-lg container-navbar fixed-top sticky-sm-top sticky-md-top"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand league-spartan navbar-brand-a ms-4" href="#"
+            >Bisa<span style="color: #c2ff7b">Sehat</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCentered"
+            aria-controls="navbarCentered"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarCentered"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active poppins-medium"
+                  style="color: #C2FF7B !important;"
+                  aria-current="page"
+                  href="index.html"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active poppins-medium" href="beritaMain.html"
+                  >Berita</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active poppins-medium" href="tipsSehat.html"
+                  >Tips Sehat</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active poppins-medium" href="sdkMain.html"
+                  >Sumber Daya Kesehatan</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active poppins-medium" href="event.html"
+                  >Event</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active poppins-medium"
+                  href="tentangKami.html"
+                  >Tentang Kami</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex container-login">
+            <div class="d-flex login-signup">
+              <a href="">
+                <button class="button-8" type="button" id="btn-daftar">
+                  Daftar
+                </button>
+              </a>
+            </div>
+            <div class="d-flex login-signup">
+              <a href="login.html">
+                <button class="button-8" type="button">Masuk</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
