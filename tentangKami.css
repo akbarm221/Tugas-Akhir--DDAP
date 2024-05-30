@@ -112,6 +112,11 @@ a {
   color: white;
 }
 
+.nav-link:hover {
+  color:#C2FF7B !important ;
+  transition: 0.3s !important;
+  transition: ease-in-out;
+}
 /* Button Navbar */
 .button-8 {
   border : 1px white solid;
@@ -134,9 +139,25 @@ a {
 }
 /* Navbar Style end */
 
-.about-section, .contact-section {
-  padding: 40px 0;
+.hero-1 {
+  background-color: #F0FFDD;
+  
 }
+
+.about-section  {
+  padding: 70px 0;
+}
+
+.contact-section {
+  padding: 70px 0px;
+}
+
+.container-img {
+  display : flex;
+  justify-content : end;
+  align-items: end;
+}
+
 .about-section img  {
   width : 428px;
   height: 520px;
@@ -154,12 +175,173 @@ a {
   padding: 20px;
 }
 
-.form-row {
-  display: flex;
-  flex-wrap: wrap;
+.firstname {
+  width: 250px;
 }
 
-.form-group {
-  flex: 1;
-  min-width: 200px;
+.lastname {
+  width: 250px;
+}
+
+.email {
+  width: 590px;
+}
+
+.message {
+  width: 590px;
+}
+
+input {
+  border-radius: 10px;
+  border: 0.5px #696868 solid;
+  height: 35px;
+}
+
+textarea {
+  border-radius: 10px;
+  border: 1px #696868 solid;
+}
+
+/* Button Content */
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #32CD32;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  width: 590px;
+}
+
+.button-5:hover,
+.button-5:focus {
+  background-color: #367F36;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button-5:hover {
+  transform: translateY(-1px);
+}
+
+.button-5:active {
+  background-color: #367F36;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.img-dc {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.btn-dc {
+  width: 70%;
+  height: fit-content;
+  border-radius: 5px;
+  border: none;
+  background-color: #5865F2;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+
+.btn-dc:hover {
+  transform: scale(1.05); 
+}
+
+
+
+@media (max-width : 768px ) {
+  .hero-1 {
+    background-color: #F0FFDD;
+    padding: 10px;
+  }
+  
+  .about-description {
+    margin-top : 70px;
+  }
+  
+  .about-section, .contact-section {
+    padding: 10px 0;
+  }
+
+  .container-img {
+  display : flex;
+  justify-content : center;
+  align-items: center;
+}
+
+.container-button-dc {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.firstname {
+  width: 250px;
+}
+
+.lastname {
+  width: 250px;
+}
+
+.email {
+  width: 400px;
+}
+
+.message {
+  width: 400px;
+}
+
+.button-5 {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #32CD32;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }

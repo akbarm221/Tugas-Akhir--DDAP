@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="tentangKami.css">
 </head>
-<body style="background-color: #EBEBE8;">
+<body style="background-color: white">
   <section id="navbar">
     <nav class="navbar navbar-expand-lg container-navbar fixed-top sticky-sm-top sticky-md-top">
       <div class="container-fluid">
@@ -34,66 +34,69 @@
               <a class="nav-link active poppins-medium " href="event.html">Event</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active poppins-medium " href="tentangKami.html">Tentang Kami</a>
+              <a class="nav-link active poppins-medium " href="tentangKami.html" style="color: #C2FF7B !important;">Tentang Kami</a>
             </li>
           </ul>
         </div>
         <div class="d-flex container-login">
-        <div class="d-flex login-signup">
-          <button class="button-8" type="button" id="btn-daftar">Daftar</button>
+          <a href="register.html">
+            <button class="button-8" type="button" id="btn-daftar">
+              Daftar
+            </button>
+          </a>
         </div>
         <div class="d-flex login-signup">
-          <button class="button-8" type="button">Masuk</button>
-         </div>
+          <a href="login.html">
+            <button class="button-8" type="button">Masuk</button>
+          </a>
       </div>
     </div>
     </nav>
   </section>
 
+  <div class="hero-1">
   <div class="container about-section">
     <div class="row">
         <div class="col-md-6 about-description">
-            <h2>Tentang Kami</h2>
-            <h4>Subheading for description or instructions</h4>
-            <p>Body text for your whole bio. We'll put in some lorem ipsum to show how a filled-out page might look.</p>
-            <p>Excepteur efficient emerging, minim veniam anim aute carefully curated duisza conversation exquisite perfect nostrud nisi intricate Content. Qui international first-class nulla ut. Punctual adipscising, essential lovely queen tempor eiusmod iure. Exclusive izakaya charming Scandinavian impeccable aute quality of life soft power pariatur Melbourne occaecat discerning. Qui wardrobe allquip, et Porter destination Toto remarkable officia Helsinki excepteur Basset hound, Zürich sleepy perfect consectetur.</p>
-            <button class="btn btn-dark">GABUNG</button>
+            <h2 class="poppins-medium">Tentang kami</h2>
+            <h4 class="inter-regular" style="color: #696868;">Subheading for description or instructions</h4>
+            <p class=" inter-regular">BisaSehat adalah sebuah platform kesehatan yang menyediakan berbagai informasi dan sumber daya kesehatan untuk membantu Anda menjaga dan meningkatkan kualitas hidup.</p>
+            <p class="inter-regular">Dengan misi untuk memberikan edukasi kesehatan yang mudah diakses, BisaSehat menawarkan beragam artikel dan tips seputar kesehatan fisik dan mental, gaya hidup sehat, serta berbagai acara untuk. BisaSehat dirancang untuk menjadi sumber terpercaya yang membantu masyarakat mendapatkan pengetahuan yang mereka butuhkan untuk hidup lebih sehat dan bahagia. Dengan konten yang diperbarui secara rutin, BisaSehat berkomitmen untuk mendukung setiap individu dalam perjalanan kesehatan mereka</p>
+          <div class="container-button-dc">
+              <button class="btn-dc inter-medium">GABUNG KOMUNITAS   <img src="img/discord.svg" alt="" class="img-fluid img-dc"> </button>
+            </div>
+        
         </div>
-        <div class="col-md-6 mx-auto d-flex justify-content-center">
-            <img src="https://via.placeholder.com/500x500" alt="About Image">
+        <div class="col-md-6 mx-auto container-img">
+            <img src="img/logo BisaSehat community.svg" alt="About Image">
         </div>
     </div>
 </div>
+</div>
 
-<div class="container-fluid contact-section bg-light">
+<div class="container contact-section">
     <div class="row">
         <div class="col-md-6 mx-auto d-flex justify-content-center">
-            <img src="https://via.placeholder.com/500x500" alt="Contact Image">
+            <img src="img/hubungi kami.jpg" alt="Contact Image" class="img-fluid">
         </div>
         <div class="col-md-6 contact-form">
-            <h2>Hubungi Kami</h2>
-            <h4>Subheading for description or instructions</h4>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="firstName">First name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="Jane">
-                    </div>
-                    <div class="form-group col-md-6 ms-4">
-                        <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Smitherton">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="email@jenstaskeddomain.net">
-                </div>
-                <div class="form-group">
-                    <label for="message">Your message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your question or message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark">Submit</button>
-            </form>
+            <h2 class="poppins-semibold">Hubungi Kami</h2>
+            <h4 class="inter-regular">Kirim pertanyaan, saran, atau umpan balikmu melalui informasi kontak yang tersedia di bawah ini:</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <p class="inter-medium">First Name</p>
+                <input type="text" class="firstname shadow-sm">
+              </div>
+              <div class="col-md-6">
+                <p class="inter-medium">Last Name</p>
+                <input type="text" class="lastname shadow-sm">
+              </div>
+            </div>
+            <p class="mt-3 inter-medium">Email Address</p>
+            <input type="email" class="email shadow-sm">
+            <p class="mt-3 inter-medium">Message</p>
+            <textarea id="message" rows="4" placeholder="Enter your question or message" class="message shadow-sm"></textarea>
+            <button type="button" class="button-5 mt-4 poppins-semibold ">Daftar Disini</button>
         </div>
     </div>
 </div>

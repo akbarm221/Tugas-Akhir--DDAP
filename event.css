@@ -111,6 +111,11 @@ a {
   font-size: 25px;
   color: white;
 }
+.nav-link:hover {
+  color:#C2FF7B !important ;
+  transition: 0.3s !important;
+  transition: ease-in-out;
+}
 
 /* Button Navbar */
 .button-8 {
@@ -239,6 +244,7 @@ margin-right: 10px;
 .container-login {
 margin-left : 20px;
 }
+
 
 /* Navbar end */
 
