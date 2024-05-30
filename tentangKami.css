@@ -268,7 +268,37 @@ textarea {
   transform: scale(1.05); 
 }
 
+/* FOOTER */
+.footer {
+        background-color: #28a745;
+        color: #ffffff;
+        padding: 20px 0;
+      }
+      .footer .social-icons a {
+        color: #ffffff;
+        margin-right: 15px;
+        font-size: 24px;
+      }
+      .footer .social-icons a:hover {
+        color: #dddddd;
+      }
+      .footer h5, .footer p {
+        margin: 0;
+      }
+      .footer .footer-copy {
+        text-align: center;
+        margin-top: 10px;
+      }
 
+     
+
+      .footer-social-icon img {
+        width: 25px;
+        height: 25px;
+      }
+      
+
+/* FOOTER END */
 
 @media (max-width : 768px ) {
   .hero-1 {
