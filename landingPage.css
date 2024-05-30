@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 /* font style  */
 
 .montserrat-regular {
@@ -57,6 +58,9 @@
   font-variation-settings:
     "slnt" 0;
 }
+
+
+
 
 .lato-bold {
   font-family: "Lato", sans-serif;
@@ -159,7 +163,7 @@ a {
 
 .content-wrap {
   padding: 80px 100px 0px 100px;
-  background-color: #EBEBE8;
+  background-color: white;
   
 }
 

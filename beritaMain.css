@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 /* font style  */
 
 .montserrat-regular {
@@ -43,6 +44,15 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
   font-variation-settings:
     "slnt" 0;
@@ -132,18 +142,31 @@ a {
 #btn-daftar {
   margin-right: 20px;
 }
+
+.nav-link:hover {
+  color:#C2FF7B !important ;
+  transition: 0.3s !important;
+  transition: ease-in-out;
+}
 /* Navbar Style end */
 
-.jumbotron {
-  margin-top : 50px;
-}
+  .jumbotron {
+    padding: 100px;
+  }
 
 .hero-section {
   background-color: #e0f7da;
 }
-.hero-section img {
-  width: 100%;
-  height: auto;
+
+.img-hoax {
+  width: 550px;
+  height: 390px;
+}
+
+.p-2-container-hero-content {
+  font-size: 16px;
+  color: #696868;
+  margin-top: 85px;
 }
 
 
@@ -153,8 +176,10 @@ a {
   padding: 10px 0;
   font-weight: bold;
 }
-.news-section {
-  padding: 40px 0;
+
+.section-4berita {
+  padding: 50px;
+  background-color: white;
 }
 
 .news-section h2 {
@@ -172,9 +197,28 @@ a {
   margin-right: 20px;
 }
 
+.img-4-berita {
+  width: 300px !important;
+  height: 200px !important;
+  border-radius: 10px;
+}
+
+.row-berita {
+  margin-top: 30px !important;
+}
+
+.h2-header-berita {
+  margin-top : 50px;
+}
+
 .news-img img {
-  width: 100%; /* Gambar mengisi seluruh lebar div */
-  height: auto;
+  width: 300px; /* Gambar mengisi seluruh lebar div */
+  height: 211px;
+}
+
+.p-content-berita {
+  color: #696868;
+  font-size: 14px;
 }
 
 .news-content {
@@ -199,6 +243,7 @@ a {
   height: auto;
   margin-right: 20px;
 }
+
 .news-card .card-body {
   flex: 1;
 }
@@ -210,10 +255,9 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 20px;
-            height: 80px;
+            padding: 15px;
             border-radius: 8px;
-            margin-top: 20px;
+            
         }
 
        
@@ -242,6 +286,62 @@ a {
             margin-bottom: 5px;
         }
 
+        .h1-article {
+          margin-top: 70px;
+          margin-bottom: 50px;
+        }
+
+        .article-3-img {
+          height: 300px !important;
+        }
+
+        .container-article-parent {
+          margin-bottom: 100px;
+        }
+
+        .container-artikel-logo img {
+          width : 40px !important;
+          height : 40px !important;
+        }
+
+        .text-darker {
+          color: #696868;
+        }
+
+        .p-instansi-kesehatan {
+          margin-left: 15px;
+        }
+
+        /* FOOTER */
+      .footer {
+        background-color: #28a745;
+        color: #ffffff;
+        padding: 20px 0;
+      }
+      .footer .social-icons a {
+        color: #ffffff;
+        margin-right: 15px;
+        font-size: 24px;
+      }
+      .footer .social-icons a:hover {
+        color: #dddddd;
+      }
+      .footer h5, .footer p {
+        margin: 0;
+      }
+      .footer .footer-copy {
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .footer-social-icon img {
+        width: 25px;
+        height: 25px;
+      }
+      
+
+/* FOOTER END */
+
 /* Untuk responsif */
 @media (max-width: 768px) {
   
@@ -260,6 +360,43 @@ a {
   
   /* Navbar end */
 
+  .jumbotron {
+    padding: 10px;
+    margin-top : 100px;
+  }
+
+  .img-hoax {
+    width: auto;
+    height: auto;
+  }
+
+  .p-2-container-hero-content {
+    font-size: 16px;
+    color: #696868;
+    margin-top: 85px;
+  }
+
+  .container-4berita-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-4berita {
+    padding: 10px;
+    background-color: white;
+  }
+
+  .section-4berita {
+    padding: 50px;
+    background-color: white;
+  }
+
+  .news-section h2 {
+    text-align: center;
+  }
+
   .news-item {
       flex-direction: column;
   }
@@ -269,4 +406,16 @@ a {
       width: 100%; /* Setelah perubahan menjadi vertikal, elemen mengisi lebar penuh */
       margin-right: 0; /* Hapus margin kanan pada gambar */
   }
+
+  .p-instansi-kesehatan {
+    margin-left: 0px;
+  }
+
+  .footer-social-icon {
+  margin-left: 17px;
+}
+
+.container-article-typography {
+  padding: 1.5rem;
+}
 }
